@@ -75,7 +75,8 @@ public class ReferenceDiscoveryService
         }
 
         var projectFiles = Directory.EnumerateFiles(folder, "*.csproj")
-            .Concat(Directory.EnumerateFiles(folder, "*.vbproj"));
+            .Concat(Directory.EnumerateFiles(folder, "*.vbproj"))
+            .Concat(Directory.EnumerateFiles(folder, "*.fsproj"));
         foreach (var file in projectFiles)
         {
             var id = file.Replace(SourceFolder, "");
