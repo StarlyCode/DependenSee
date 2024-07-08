@@ -4,10 +4,10 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
 
-    <PackAsTool>true</PackAsTool>
+    <!--<PackAsTool>true</PackAsTool>-->
     <ToolCommandName>DependenSee</ToolCommandName>
     <PackageOutputPath>./bin/nupkg</PackageOutputPath>
-    <Version>2.2.0</Version>
+    <Version>2.2.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <PropertyGroup>
+    <PackageId>Dependensee-WCRI</PackageId>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <Authors>Madushan</Authors>
     <Description>Dotnet Tool to visualize or export project and package dependencies.</Description>
